@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Mimicking</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Word Mimicking</h1>
+  
+  <div id="container">
+    <div>
+      <img id="sourceImage" src="" alt="Word Image">
+    </div>
+  </div>
+  <canvas id="signature-pad" width="200" height="100"></canvas>
+  <button id="clear-button">Clear</button>
+  <button id="save-button">Save</button>
+  <script src="bazier.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    // Function to generate a random number between min and max (inclusive)
+    function getRandomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // Get the <img> element
+    var sourceImage = document.getElementById('sourceImage');
+
+    // Set the image source with a random parameter
+    var randomNumber = getRandomNumber(1, 20);
+    sourceImage.src = "image_dir\\good_"+randomNumber+".png";
+  </script>
+</body>
+</html>

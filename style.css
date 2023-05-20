@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: #ececec;
+    overflow: hidden;
+}
+#signature-pad {
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: crosshair;
+}
+
+#clear-button {
+  margin-top: 10px;
+}
